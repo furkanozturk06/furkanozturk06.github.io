@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Survive Camp — Destek / Support</title>
+<title>Survive Camp — Support / Destek</title>
 <style>
   :root { --bg: #0D1B2A; --card: #13263A; --text: #E8F1F8; --dim: #9FB3C8; --accent: #FF9F2E; }
   body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
@@ -19,20 +19,10 @@
 <body>
 <main>
   <h1>Survive Camp</h1>
-  <p class="meta">Destek / Support</p>
+  <p class="meta">Support / Destek</p>
+  <nav><a href="#en">English</a> · <a href="#tr">Türkçe</a></nav>
 
-  <section class="card" lang="tr">
-    <h2>Türkçe</h2>
-    <p>Soru, hata bildirimi veya öneri için e-posta gönderin: <a href="mailto:furknozturk06@gmail.com">furknozturk06@gmail.com</a>. Genellikle birkaç gün içinde yanıt veririz.</p>
-    <ul>
-      <li><b>Satın aldığım eşya kayboldu:</b> Oyunda Mağaza → "Satın alımları geri yükle" düğmesine dokunun. Satın alma sırasında kullandığınız mağaza hesabıyla giriş yapmış olmalısınız.</li>
-      <li><b>İlerlemem silindi:</b> İlerleme yalnızca cihazda tutulur; oyun silinirse ilerleme de silinir. Satın alınan eşyalar geri yüklenebilir.</li>
-      <li><b>Reklam izni:</b> Avrupa'da reklam tercihinizi Ayarlar → "Reklam gizliliği" bölümünden değiştirebilirsiniz. iPhone'da izleme iznini iOS Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden değiştirebilirsiniz.</li>
-    </ul>
-    <p><a href="gizlilik.html">Gizlilik politikası ve KVKK aydınlatma metni</a></p>
-  </section>
-
-  <section class="card" lang="en">
+  <section class="card" id="en" lang="en">
     <h2>English</h2>
     <p>For questions, bug reports or suggestions, email <a href="mailto:furknozturk06@gmail.com">furknozturk06@gmail.com</a>. We usually reply within a few days.</p>
     <ul>
@@ -42,6 +32,25 @@
     </ul>
     <p><a href="gizlilik.html">Privacy policy</a></p>
   </section>
+
+  <section class="card" id="tr" lang="tr">
+    <h2>Türkçe</h2>
+    <p>Soru, hata bildirimi veya öneri için e-posta gönderin: <a href="mailto:furknozturk06@gmail.com">furknozturk06@gmail.com</a>. Genellikle birkaç gün içinde yanıt veririz.</p>
+    <ul>
+      <li><b>Satın aldığım eşya kayboldu:</b> Oyunda Mağaza → "Satın alımları geri yükle" düğmesine dokunun. Satın alma sırasında kullandığınız mağaza hesabıyla giriş yapmış olmalısınız.</li>
+      <li><b>İlerlemem silindi:</b> İlerleme yalnızca cihazda tutulur; oyun silinirse ilerleme de silinir. Satın alınan eşyalar geri yüklenebilir.</li>
+      <li><b>Reklam izni:</b> Avrupa'da reklam tercihinizi Ayarlar → "Reklam gizliliği" bölümünden değiştirebilirsiniz. iPhone'da izleme iznini iOS Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden değiştirebilirsiniz.</li>
+    </ul>
+    <p><a href="gizlilik.html">Gizlilik politikası ve KVKK aydınlatma metni</a></p>
+  </section>
 </main>
+<script>
+  try {
+    var langs = navigator.languages || [navigator.language || ''];
+    if (!location.hash && String(langs[0] || '').toLowerCase().indexOf('tr') === 0) {
+      document.getElementById('tr').scrollIntoView();
+    }
+  } catch (e) {}
+</script>
 </body>
 </html>
