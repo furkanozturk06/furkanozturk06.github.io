@@ -201,7 +201,12 @@
     </main>
     <script>
         // Türkçe cihaz/tarayıcı: sayfa doğrudan Türkçe kısımdan açılır (bağlantıda #en ya da #tr varsa ona dokunulmaz)
-        if (!location.hash && /^tr/i.test(navigator.language || '')) location.replace('#tr');
+        if (!location.hash && /^tr/i.test(navigator.language || '')) {
+            history.replaceState(null, '', '#tr');
+            var goTr = function () { document.getElementById('tr').scrollIntoView(); };
+            goTr();
+            window.addEventListener('load', goTr);
+        }
     </script>
 </body>
 </html>
