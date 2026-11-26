@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <link rel="icon" href="/mentalpenalty/media/icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mental Penaltı — Gizlilik</title>
+<title>Mental Penalty — Privacy Policy / Gizlilik Politikası</title>
 <style>
   :root { color-scheme: dark; }
   body { margin: 0; background: #0b1220; color: #f4f6fa; font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
@@ -19,9 +19,70 @@
   .primary { background: #f5c451; color: #0b1220; }
   .secondary { background: #1b2744; color: #f4f6fa; border: 1px solid rgba(255,255,255,.15); }
   .muted { color: #9aa6bd; font-size: 14px; }
+  hr.sep { border: 0; border-top: 1px solid rgba(255,255,255,.15); margin: 44px 0 8px; }
 </style>
 </head>
 <body><main>
+<p class="muted"><a href="#en">English</a> · <a href="#tr">Türkçe ↓</a></p>
+<section id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="muted">Mental Penalty · Last updated: 8 Kasım 2026 / November 8, 2026</p>
+<p>This policy explains what personal data the Mental Penalty mobile app processes, why, and on what legal basis.</p>
+
+<h2>Data controller</h2>
+<p>Furkan Öztürk (individual developer). Contact: <a href="mailto:mentalpenalti@gmail.com">mentalpenalti@gmail.com</a></p>
+
+<h2>Data we process</h2>
+<ul>
+  <li><strong>Account data (if you create an account):</strong> username, email address, password (stored only as an irreversible hash; we cannot see it).</li>
+  <li><strong>Game data:</strong> your ranked wins and losses, coin balance, and the items you bought and equipped in the shop. Your username and wins/losses appear on the public leaderboard.</li>
+  <li><strong>Connection data:</strong> IP address, session key, and a random per-install device ID (used to manage your online connection and clean up stale connections).</li>
+  <li><strong>Player names and shirt numbers:</strong> what you enter under "My players" is stored on your device and shown to your opponent in online matches.</li>
+  <li><strong>Advertising data:</strong> the app shows Google AdMob ads. Google processes data such as your advertising ID, IP address and device information. Ads are personalized only if you allow it.</li>
+  <li><strong>If you play without an account,</strong> no account data is stored; a temporary guest name is used during the match. Connection and advertising data are still processed.</li>
+</ul>
+
+<h2>Purposes and legal bases</h2>
+<ul>
+  <li>Creating your account, sign-in, online matchmaking, leaderboard, shop and coins: <strong>performance of a contract</strong>.</li>
+  <li>Your email address is used <strong>only</strong> to send password reset codes. We never send you marketing emails.</li>
+  <li>Preventing cheating and abuse and keeping the service secure (e.g. rate limits, connection management): <strong>legitimate interest</strong>.</li>
+  <li>Showing ads so the app can be free: legitimate interest. <strong>Personalized ads only with your consent</strong>; without it you see non-personalized ads.</li>
+  <li>Complying with legal obligations.</li>
+</ul>
+
+<h2>Sharing and international transfers</h2>
+<p>To provide the service, data is shared with these providers, whose servers are located outside Türkiye:</p>
+<ul>
+  <li><strong>Render</strong> (game server) — Germany</li>
+  <li><strong>Supabase</strong> (database) — Germany</li>
+  <li><strong>Google</strong> (Gmail for password reset emails; AdMob for ads) — USA and other countries</li>
+  <li><strong>Google Play / Apple App Store</strong> (payments, once in-app purchases are enabled) — USA and other countries</li>
+</ul>
+<p>We do not sell your data.</p>
+
+<h2>Retention</h2>
+<ul>
+  <li>Account and game data: until you delete your account, then permanently deleted.</li>
+  <li>Session keys: until you sign out or delete your account.</li>
+  <li>Password reset codes: at most 15 minutes.</li>
+  <li>Server logs (IP and error logs): for the hosting provider's short log retention period.</li>
+</ul>
+
+<h2>Your rights</h2>
+<p>You can ask whether your data is processed, request access, correction or deletion, learn who it is shared with, and object to processing. Email <a href="mailto:mentalpenalti@gmail.com">mentalpenalti@gmail.com</a>; we reply within 30 days.</p>
+
+<h2>Deleting your account and ad choices</h2>
+<p>When signed in, use <strong>"Delete account"</strong> on the main menu to permanently delete your account, statistics, coins and sessions. You can withdraw consent for personalized ads at any time via <strong>"Ad choices"</strong> on the main menu.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and we do not knowingly collect data from children under 13.</p>
+
+<h2>Security</h2>
+<p>Connections are encrypted (HTTPS) and passwords are stored as irreversible hashes. In the event of a data breach we will notify the authorities and affected users as required by law.</p>
+</section>
+<hr class="sep">
+<section id="tr" lang="tr">
 <h1>Gizlilik Politikası ve Aydınlatma Metni</h1>
 <p class="muted">Mental Penaltı · Son güncelleme: 8 Kasım 2026 / November 8, 2026</p>
 <p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) madde 10 kapsamında, Mental Penaltı mobil uygulamasında hangi kişisel verilerin, hangi amaçla ve hangi hukuki sebeple işlendiğini anlatır.</p>
@@ -78,6 +139,14 @@
 
 <h2>Güvenlik</h2>
 <p>Bağlantılar şifrelidir (HTTPS). Şifreler geri döndürülemez biçimde saklanır. Bir veri ihlali olursa Kişisel Verileri Koruma Kurulu'na ve etkilenen kullanıcılara kanunda öngörülen sürelerde bildirim yapılır.</p>
-
-<p class="muted"><a href="/mentalpenalty/privacy/">English</a></p></main></body>
+</section>
+<p class="muted"><a href="#en">↑ English</a></p>
+<script>
+(function () {
+  if (location.hash) return;
+  var start = 'tr';
+  var tr = start === 'tr' || (start === 'auto' && /^tr(-|$)/i.test(navigator.language || ''));
+  if (tr) { var el = document.getElementById('tr'); if (el) el.scrollIntoView(); }
+})();
+</script></main></body>
 </html>
